@@ -1,0 +1,207 @@
+body {
+    background: linear-gradient(180deg, rgba(0,125,195,0.3) 0%, rgba(0,0,0,0.3) 50%, rgba(255,255,255,0.3) 100%);
+    background-attachment: fixed;
+}
+
+main {
+    padding: 48px 20vw 15px 35vw;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 33vw;
+    height: 100vh;
+    min-height: 600px;
+    padding: 190px 10px 10px 34px;
+    background: rgba(255, 255, 255, 0.5);
+    border-right: 1px solid #c8c8c8;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    margin-left: -24px;
+    margin-bottom: 10px;
+}
+
+nav ul li a svg {
+    width: 25px;
+    height: 25px;
+    margin: 0px 15px 0px 10px;
+}
+
+nav div {
+    position: absolute;
+    bottom: 0px;
+}
+
+#logo {
+    position: fixed;
+    top: 48px;
+    left: 34px;
+}
+#logo img {
+    width: 300px;
+}
+
+#search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px) contrast(50%);
+    -webkit-backdrop-filter: blur(50px) contrast(50%);
+    visibility: hidden;
+}
+#search button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#search form {
+    width: 80%;
+    max-width: 600px;
+}
+#search form input {
+    border: solid 1px white;
+}
+
+#content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: white;
+    backdrop-filter: blur(50px) contrast(50%);
+    -webkit-backdrop-filter: blur(50px) contrast(50%);
+    visibility: hidden;
+    overflow-y:auto;
+}
+#content button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#content div {
+    margin: 50px 20vw 100px 20vw;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+    background: rgba(255, 255, 255, 0.333);
+    border-radius: 8px;
+}
+
+.card-body p, #content_text p {
+    white-space: pre-line;
+}
+
+#content_text img {
+    max-height: 60vh;
+}
+
+@media (max-width: 1200px) {
+
+main {
+    max-width: 800px;
+    padding: 190px 10px 102px 10px;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    height: 87px;
+    min-height: 87px;
+    top: auto;
+    bottom: 0px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid #c8c8c8;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px) contrast(50%);
+    -webkit-backdrop-filter: blur(8px) contrast(50%);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 150px;
+    text-align: center;
+}
+
+nav ul li a {
+    margin: 0;
+}
+
+nav ul li a svg {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+    position: absolute;
+    left: calc(50vw - 150px);
+}
+
+#content div {
+    margin: 50px 10vw 100px 10vw;
+}
+
+}
+
+@media (max-width: 700px) {
+
+main {
+    padding: 150px 10px 80px 10px;
+}
+
+nav {
+    height: 75px;
+    min-height: 75px;
+}
+
+nav ul li {
+    width: 22vw;
+    font-size: 0px !important;
+}
+
+#logo {
+    position: absolute;
+    left: calc(50vw - 100px);
+}
+#logo img {
+    width: 200px;
+}
+
+#search form {
+    width: 100%;
+}
+
+#content div {
+    margin: 32px 0 32px 0;
+}
+
+}

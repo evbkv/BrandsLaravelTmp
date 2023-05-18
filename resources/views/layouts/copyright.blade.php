@@ -1,0 +1,1 @@
+&copy; 2023 <a href="/" class="link-secondary text-decoration-none">Eesti kaubamärgid</a>
